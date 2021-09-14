@@ -1,0 +1,19 @@
+<html>
+   <head></head>
+   <body style="background-color:aquamarine;">
+     <canvas id="canvas1" 
+   width="600" height="800"></canvas> 
+
+   <script>
+      var can = document.getElementById("canvas1"); 
+      var ctx = can.getContext("2d");
+
+      ctx.fillStyle = "rgb(20,50,90)";
+      ctx.fillRect(10,10,100,100)
+      ctx.rotate((Math.PI / 180)*25);
+      ctx.font="bold 50px tahoma"
+      ctx.fillText("papago",300,300)
+   </script>
+
+   </body>
+</html>
