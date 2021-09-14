@@ -1,0 +1,31 @@
+Metadata: 나머지 내용의 표시 또는 동작을 설정하는 내용입니다. 이러한 요소는 문서의 머리 부분에 있습니다.
+Elements: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>
+
+Embedded: 문서로 다른 리소스를 가져오는 내용.
+Elements: <audio>, <video>, <canvas>, <iframe>, <img>, <math>, <object>, <svg>
+
+Interactive: 사용자 상호 작용을 위한 콘텐츠입니다.
+요소: <a>, <audio>, <video>, <button>, <details>, <embed>, <iframe>, <input>, <label>, <object>, <select>, <text area>
+
+Heading: 섹션 헤더를 정의합니다.
+요소: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup>
+
+Phrasing: 이 모델에는 HTML4와 공통적으로 많은 인라인 레벨 요소가 있습니다.
+요소: <img>, <span>, <strong>, <label>, <br />, <small>, <sub> 등.
+
+
+흐름 내용: 문서의 일반 흐름에 포함될 HTML5 요소의 대부분을 포함합니다.
+
+Flow content: 제목, 내용, 탐색 및 바닥글의 범위를 정의합니다.
+Elements: <article>, <aside>, <nav>, <section> 
+
+
+footer가 보여주는 정보
+- 연락처 정보
+- 개인 정보 보호 정책
+- 소셜 미디어 아이콘
+- 서비스 약관
+- 저작권 정보
+- 사이트맵 및 관련 문서
+
+
