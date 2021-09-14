@@ -29,3 +29,32 @@ footer가 보여주는 정보
 - 사이트맵 및 관련 문서
 
 
+localStorage() vs sessionStorage
+공통적으로 두 저장소 모두 웹 서버에서만 사용할 수 있다.
+또한 쿠키보다 더 많은 정보를 저장할 수 있다.
+차이점은 데이터의 영구성에 있다.
+로컬스토리지는 사용자가 지우지 않는 이상 데이터가 보관된다.
+또한 같은 URL에서 모든 창, 탭에서 데이터가 공유된다.
+세션스토리지는 사용자가 브라우저를 종료하면 데이터가 삭제된다.
+또한 같은 URL이라도 그 탭에서만 데이터를 사용할 수 있다.
+localStorage의 사용법
+ - localStorage.setItem("key1", "value1") - 데이터 저장
+ - localStorage.getItem("key1") - 데이터 로드
+ - localStorage.removeItem("key1") - 데이터 삭제
+ - localStorage.clear() - 데이터 전부 삭제
+sessionStorage의 사용법
+ - sessionStorage.setItem("name", "본인 이름");
+ - sessionStorage.getItem("name");
+
+
+html5의 Geolocation API는 사용자의 위치정보를 알 수 있다.
+Geolocation 메서드
+showLocation (필수): 위치 정보를 검색하는 콜백 메서드를 정의합니다.
+ErrorHandler(옵션): 비동기 호출을 처리하는 동안 오류가 발생할 때 호출되는 콜백 메서드를 정의합니다.
+Options (옵션): 위치 정보를 검색하는 옵션 집합을 정의합니다.
+사용법
+navigator.Geolocation.(메서드)
+
+
+
+
