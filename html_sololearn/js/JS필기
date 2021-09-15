@@ -1,0 +1,94 @@
+변수선언 방법
+ - 변수 이름의 첫 번째 문자는 문자, 밑줄(_), 달러 기호($)여야 한다
+ - 첫 문자가 숫자일 수는 없다.
+ - 변수 이름으로 수학적 기호가 들어가 수 없다.
+ - 변수 이름에 공백이 있을 수 없다.
+ - #, % 같은 특별한 기호는 사용할 수 없다.
+ 
+ if 간소화
+ 변수선언 = (조건) ? (참) : (거짓)
+
+JS는 3가지 알림창 기능을 제공한다.
+Alert: 사용자에게 정보를 제공하기 위해서, 계속 진행하려면 확인 버튼을 눌러야 한다, 단일 파라미터, \n으로 줄바꿈
+Prompt: 값을 입력할 수 있는 inputbox가 존재함, 확인과 취소 버튼이 있음, 취소버튼 클릭시 null값 반환, 입력 타입 지정 가능
+Confirm: 무언가의 확인을 위한 알림창, 확인 = true : 취소 = false 반환
+
+Math Object
+math오브젝트는 수학적 일을 수행하는 메소드와 값을 가진다
+종류
+
+속성
+Math.E: 오일러의 상수이며 자연로그의 밑. 약 2.718.
+Math.LN2: 2의 자연로그. 약 0.693.
+Math.LN10: 10의 자연로그. 약 2.303.
+Math.LOG2E: 밑이 2인 로그 E. 약 1.443.
+Math.LOG10E: 밑이 10인 로그 E. 약 0.434.
+Math.PI: 원의 둘레와 지름의 비율. 약 3.14159.
+Math.SQRT1_2: ½의 제곱근. 약 0.707.
+Math.SQRT2: 2의 제곱근. 약 1.414.
+
+메서드
+Math.abs(x): 숫자의 절댓값을 반환합니다.
+Math.acos(x): 숫자의 아크코사인 값을 반환합니다.
+Math.acosh(x) (en-US): 숫자의 쌍곡아크코사인 값을 반환합니다.
+Math.asin(x) (en-US): 숫자의 아크사인 값을 반환합니다.
+Math.asinh(x) (en-US): 숫자의 쌍곡아크사인 값을 반환합니다.
+Math.atan(x) (en-US): 자의 아크탄젠트 값을 반환합니다.
+Math.atanh(x) (en-US): 숫자의 쌍곡아크탄젠트 값을 반환합니다.
+Math.atan2(y, x) (en-US): 인수 몫의 아크탄젠트 값을 반환합니다.
+Math.cbrt(x): 숫자의 세제곱근을 반환합니다.
+Math.ceil(x): 인수보다 크거나 같은 수 중에서 가장 작은 정수를 반환합니다.
+Math.clz32(x) (en-US): 주어진 32비트 정수의 선행 0 개수를 반환합니다.
+Math.cos(x) (en-US): 숫자의 코사인 값을 반환합니다.
+Math.cosh(x) (en-US): 숫자의 쌍곡코사인 값을 반환합니다.
+Math.exp(x): E^x 를 반환합니다. x는 인수이며 E 는 오일러 상수(2.718...) 또는 자연로그의 밑입니다.
+Math.expm1(x) (en-US): exp(x)에서 1을 뺀 값을 반환합니다.
+Math.floor(x): 인수보다 작거나 같은 수 중에서 가장 큰 정수를 반환합니다.
+Math.fround(x): 인수의 가장 가까운 단일 정밀도 표현을 반환합니다.
+Math.hypot([x[, y[, …]]]) (en-US): 인수의 제곱합의 제곱근을 반환합니다.
+Math.imul(x, y): 두 32비트 정수의 곱을 반환합니다.
+Math.log(x): 숫자의 자연로그(e를 밑으로 하는 로그, 즉 ln) 값을 반환합니다.
+Math.log1p(x) (en-US): 숫자 x에 대해 1 + x의 자연로그(e를 밑으로 하는 로그, ln) 값을 반환합니다.
+Math.log10(x) (en-US): 숫자의 밑이 10인 로그를 반환합니다.
+Math.log2(x):  숫자의 밑이 2인 로그를 반환합니다.
+Math.max([x[, y[, …]]]): 0개 이상의 인수에서 제일 큰 수를 반환합니다.
+Math.min([x[, y[, …]]]): 0개 이상의 인수에서 제일 작은 수를 반환합니다.
+Math.pow(x, y): x의 y 제곱을 반환합니다.
+Math.random(): 0과 1 사이의 난수를 반환합니다.
+Math.round(x): 숫자에서 가장 가까운 정수를 반환합니다.
+Math.sign(x): x의 양의 수인지 음의 수인지 나타내는 부호를 반환합니다.
+Math.sin(x): 숫자의 사인 값을 반환합니다.
+Math.sinh(x): 숫자의 쌍곡사인 값을 반환합니다.
+Math.sqrt(x): 숫자의 제곱근을 반환합니다.
+Math.tan(x): 숫자의 탄젠트 값을 반환합니다.
+Math.tanh(x): 숫자의 쌍곡탄젠트 값을 반환합니다.
+Math.toSource(): 문자열 "Math"를 반환합니다.
+Math.trunc(x): 자의 정수 부분을 반환합니다.
+
+DOM
+브라우저에서 웹 페이지를 열면 페이지의 HTML이 로드되어 화면에 시각적으로 렌더링됩니다.
+이를 위해 브라우저는 논리적 구조의 객체 지향 모델인 해당 페이지의 문서 객체 모델을 작성합니다.
+HTML 문서의 DOM은 상자의 중첩 집합으로 나타낼 수 있습니다.
+document.**** 같은 경우가 DOM이다.
+//id로 요소를 찾는다
+document.getElementById(id) 
+
+//class이름으로 요소를 찾는다
+document.getElementsByClassName(name) 
+
+//tag이름으로 요소를 찾는다
+document.getElementsByTagName(name)
+
+DOM의 각 요소에는 DOM의 관계에 대한 정보를 제공하는 일련의 속성 및 메서드가 있습니다.
+element.childNodes는 요소의 자식 노드 배열을 반환합니다.
+element.firstChild는 요소의 첫 번째 자식 노드를 반환합니다.
+element.lastChild는 요소의 마지막 자식 노드를 반환합니다.
+element.hasChildNodes에 하위 노드가 있으면 true를 반환하고, 그렇지 않으면 false를 반환합니다.
+element.nextsibling은 동일한 트리 수준의 다음 노드를 반환합니다.
+element.previousSibling은 동일한 트리 수준에서 이전 노드를 반환합니다.
+element.parentNode는 요소의 상위 노드를 반환합니다.
+
+
+
+
+

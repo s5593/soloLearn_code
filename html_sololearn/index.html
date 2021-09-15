@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>asd</title>
 </head>
+<style>
+  #container {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: relative;
+  }
+
+  #box {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+  }
+</style>
+
 <body>
-    <svg width="100" height="100">
-        <line x1="50" y1="0" x2="50" y2="100" 
-          style="stroke:black" />
-        <line x1="0" y1="50" x2="100" y2="50" 
-          style="stroke:black" />
-      </svg>
+  <div id="demo">some content
+
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+
+  </div>
+  <div id="container">
+    <div id="box"> </div>
+  </div>
 </body>
+<script>
+  window.onload = function () {
+    var p = document.createElement("p")
+    var node = document.createTextNode("some")
+
+    p.appendChild(node)
+
+    var div = document.getElementById("demo")
+    div.appendChild(p)
+    ///////////////////////////////////////////////////////////////////
+    var p2 = document.createElement("p");
+    var node2 = document.createTextNode("This is new");
+    p2.appendChild(node2);
+
+    var parent1 = document.getElementById("demo");
+    var child1 = document.getElementById("p1");
+    parent1.replaceChild(p2, child1);
+    ///////////////////////////////////////////////////////////////
+    let t = setInterval(move, 10);
+    let pos = 0
+    let box = document.getElementById("box")
+
+    function move() {
+      if (pos >= 150) {
+        clearInterval(t);
+      } else {
+        pos += 1;
+        box.style.left = pos + "px";
+      }
+
+    }
+  }
+</script>
+
 </html>
