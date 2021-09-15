@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>asd</title>
+</head>
+<style>
+  #container {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: relative;
+  }
+
+  #box {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+  }
+
+  button {
+    margin-top: 30px;
+    float: left;
+    height: 50px;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+</style>
+
+<body onload="show()">
+  <div id="demo">some content
+
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+
+  </div>
+  <div id="container">
+    <div id="box"> </div>
+  </div>
+  <p onclick="show()">click me</p>
+  <div>
+    <button onclick="prev()"> Prev </button>
+    <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" width="200px" height="100px" />
+    <button onclick="next()"> Next </button>
+  </div>
+</body>
+<script>
+  window.onload = function () {
+    var p = document.createElement("p")
+    var node = document.createTextNode("some")
+
+    p.appendChild(node)
+
+    var div = document.getElementById("demo")
+    div.appendChild(p)
+    ///////////////////////////////////////////////////////////////////
+    var p2 = document.createElement("p");
+    var node2 = document.createTextNode("This is new");
+    p2.appendChild(node2);
+
+    var parent1 = document.getElementById("demo");
+    var child1 = document.getElementById("p1");
+    parent1.replaceChild(p2, child1);
+    ///////////////////////////////////////////////////////////////
+    let t = setInterval(move, 10);
+    let pos = 0
+    let box = document.getElementById("box")
+
+    function move() {
+      if (pos >= 150) {
+        clearInterval(t);
+      } else {
+        pos += 1;
+        box.style.left = pos + "px";
+      }
+    }
+  }
+  show = function () {
+    console.log("pp")
+    alert("hi")
+  }
+  var ppap1 = document.getElementById("p2")
+  ppap1.onclick = function () {
+    document.body.innerHTML = Date()
+  }
+  /////////////////////////////////////////////////////////////////////
+  var a3 = document.getElementById("container")
+  a3.addEventListener("click", myfunc)
+
+  function myfunc() {
+    alert("sayhello")
+  }
+  /////////////////////////////////////////////////////////////
+  var images = [
+    "http://www.sololearn.com/uploads/slider/1.jpg",
+    "http://www.sololearn.com/uploads/slider/2.jpg",
+    "http://www.sololearn.com/uploads/slider/3.jpg"
+  ];
+  var num = 0;
+function next() {
+    var slider = document.getElementById('slider');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slider');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+</script>
+
+</html>
