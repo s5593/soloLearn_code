@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <title></title>
+</head>
+  <p>papago p1</p>
+  <p>papago p2</p>
+  <div id="demo">
+    papago div id=demo
+  </div>
+  <div id="menu">
+    papago div id=menu
+  </div>
+  <div class="menu">
+    papago div class=menu
+  </div>
+  <div id="test">
+    papago div class=test
+  </div>
+  <a href="https://www.naver.com">fd</a>
+<body>
+
+</body>
+<script>
+  $("p:first").hide() // hides all <p> elements
+  $(".demo").hide() // hides all elements with class="demo"
+  $("#demo").hide() // hides the element with id="demo"
+  ///////////////////////////////////////////////////////
+  $("div#menu")
+  var aHref = $("a").attr("href");
+  console.log(aHref)
+  $(function(){
+    $("a").attr("href","http://www.daum.net")
+  })
+  /////////////////////////////////////////////////////////
+  $("div:first").removeAttr("id")
+  console.log($("p").html());
+  console.log($("p").text());
+  ////////////////////////////////////////////////////////
+  $(function() {
+    $("#test").text("hello!");
+});
+
+</script>
+
+</html>

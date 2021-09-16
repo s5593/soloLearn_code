@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<title></title>
+</head>
+<body>
+  <div>
+    div1
+  </div>
+  <div>
+    div2
+  </div>
+  <div>
+    div3
+  </div>
+  <div>
+    div4
+  </div>
+  <div>
+    div5
+  </div>
+  <div>
+    div6
+  </div>
+  <div>
+    div7
+  </div>
+
+</body>
+<script>
+  $(function(){
+    $("div").eq(2).text("it`s me!");
+    $("div").eq(1).remove();
+    $("div").eq(2).text("yes.");
+    $("div").eq(4).empty();
+    $("div").eq(5).text("i`m five man");
+  })
+</script>
+</html>

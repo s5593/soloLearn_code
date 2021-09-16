@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<title></title>
+</head>
+<body>
+  <p id="papa">
+    poikf
+  </p>
+  <p id="demo">asdf</p>
+  <input type="text" id="name" value="Your Name">
+</body>
+<script>
+  $(function(){
+    console.log($("#name").val());
+  })
+  $("p").before("<div>")
+  $("#papa").append("divdiv")
+  $("p").after("</div>")
+  $(function() {
+    $("#demo").before("<i>Some Title</i>");
+    $("#demo").after("<b>Welcome</b>");
+});
+$(function() {
+    var txt = $("<ins></ins>").text("Hi");
+    $("#demo").after(txt);
+});
+</script>
+</html>

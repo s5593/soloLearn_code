@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <title></title>
+</head>
+<style>
+  #item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 0 16px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 160px;
+    text-align: center;
+  }
+
+  #item:hover,
+  #item:focus {
+    background-color: #3e8e41;
+  }
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+
+  #submenu {
+    display: none;
+    position: absolute;
+    background-color: #3e8e41;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  #submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  #submenu a:hover {
+    background-color: #4CAF50
+  }
+</style>
+
+<body>
+  <div class="menu">
+    <div id=item> 드롭다운
+    </div>
+
+    <div id="submenu">
+      <a href="#">asd</a>
+      <a href="#">asd</a>
+      <a href="#">asd</a>
+    </div>
+  </div>
+</body>
+<script>
+  $("#item").click(function(){
+    $('#submenu').slideToggle(500)
+  })
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>liol</title>
+</head>
+
+<body>
+  <!-- 자식 노드는 공백을 포함한다. -->
+  <!-- enter or spasebar로 구분하면 자식 노드에 포함된다 -->
+  <ol id="olol"><li>Blue</li>
+    <li class="lic">Red</li>
+    <li id="lld">Green</li>
+  </ol>
+  <ul class="ulc">
+    <li id="lili">Blue</li>
+    <li>Red</li>
+    <li class="ulc">Green</li>
+  </ul>
+</body>
+<script>
+  var arr = document.getElementById("olol");
+  var a = arr.childNodes;
+  var b = arr.firstChild;
+  console.log(a)
+  console.log(document.getElementById("olol").firstChild.innerHTML);
+  console.log(a.innerHTML)
+  for (var x = 0; x < a.length; x++) {
+    if(a[x].innerHTML == undefined || a[x].innerHTML == null){
+      continue
+    }
+    console.log(x+": "+a[x].innerHTML);
+  }
+  
+  b.innerHTML = "papago";
+  console.log(b.innerHTML);
+  ////////////////////////////////////////////////////////
+  var addNode = document.createElement("li")
+  var addId = document.create
+  var addText = document.createTextNode("papago is grate");
+  addNode.appendChild(addText)
+  addNode.id="redf"
+  addNode.className="dfdf"
+  arr.appendChild(addNode)
+
+  var repa = document.getElementById("olol");
+  var rech = document.getElementById("lld");
+  repa.id="redf"
+  repa.className="dfdf"
+  // repa.removeChild(rech);
+
+  
+
+
+  
+</script>
+
+</html>

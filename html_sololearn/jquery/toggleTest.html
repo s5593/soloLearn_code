@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <title></title>
+</head>
+<style>
+  b {
+    background-color: grey;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    width: 40%;
+  }
+
+  div {
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    margin: 15px;
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div>
+    <b id="toggle">Click to toggle</b>
+    <b id="fading">Click to toggle</b>
+    <b id="slide">Click to toggle</b>
+  </div>
+
+  <div id="div">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </div>
+</body>
+
+<script>
+  $(function () {
+    $("#toggle").on("click", function () {
+      $("#div").toggle(1000);
+    })
+  })
+  $(function () {
+    $("#fading").on("click", function () {
+      $("#div").fadeToggle(1000);
+      // $('#div').fadeTo(1000,0.7)
+    })
+  })
+  $(function () {
+    $("#slide").on("click", function () {
+      $("#div").slideToggle(1000);
+    })
+  })
+</script>
+
+</html>

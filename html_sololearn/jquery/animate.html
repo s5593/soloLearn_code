@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<title></title>
+</head>
+<style>
+  div {
+    display:inline-block;
+    padding:25px;
+    background-color:grey;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+}
+.div {
+    background:orange;
+    height:80px;width:80px;
+    position:absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+</style>
+<body>
+  <div id="div">
+    click me!!
+  </div>
+  <div id="plus">
+    choose me!!
+  </div>
+  <div class="div"></div>
+</body>
+<script>
+//   $(function(){
+//     $('#div').click(function(){
+//       $('#div').animate({width: '250px'},300)
+//     })
+//   })
+//   $(function() {
+//     $("#plus").click(function() {
+//         $("#plus").animate({
+//             width: '+=25px',
+//             height: '+=25px'
+//         }, 500);
+//     });
+// });
+$(function() {
+    var div = $(".div");
+    div.animate({opacity: 1});
+    div.animate({height: '+=100px', width: '+=100px', top: '+=100px'}, 500);
+    div.animate({height: '-=100px', width: '-=100px', left: '+=100px'}, 500);
+    div.animate({height: '+=100px', width: '+=100px', top: '-=100px'}, 500);
+    div.animate({height: '-=100px', width: '-=100px', left: '-=100px'}, 500);
+    div.animate({opacity: 0.5});
+}); 
+</script>
+</html>

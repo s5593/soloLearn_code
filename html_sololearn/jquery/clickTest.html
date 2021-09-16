@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <title></title>
+</head>
+<style>
+  .red {
+    color: red;
+    font-weight: bold;
+  }
+
+  p {
+    background-color: green;
+    color: white;
+  }
+</style>
+
+<body>
+  <p>Some text</p>
+  <button id="add">Add Class</button>
+  <button id="toggle">Toggle Class</button>
+  <button id="bg">Background Class</button>
+  <button id="css">CSS Class</button>
+</body>
+<script>
+  $(function () {
+    $("#add").click(function () {
+      $("p").addClass("red");
+    });
+    $("#toggle").click(function () {
+      $("p").toggleClass("red");
+    });
+  });
+  $("#bg").click(function () {
+    $("p").css("background-color", "blue");
+  });
+  $("#css").click(function(){
+    $("p").css({"background-color": "red", "font-size": "200%"})
+  });
+</script>
+
+</html>
